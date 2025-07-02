@@ -60,9 +60,17 @@ This function translate the input column vector ```state``` of some state to the
 
 ## Examples
 
-In the following, I demonsate how my package can be applied to the spin singlet and triplet states, which are the most famous states for two spin sites. Note that, the package can also deal with the case of single spin. The mathematica notebook for the below examples can be found in the Demo folder.
+In the following, I demonsate how my package can be applied to the spin singlet and triplet states, which are the most famous states for two spin sites. Note that, the package can also deal with the case of single spin. The mathematica notebook for the below examples can be found in the demo folder.
 
-<img src="./Demo/initialization.png" alt="Alt Text" width="400" height="250">
+
+(1) We first load the package and check the irreps of SU(2) group. The available functions and variables can also be found by command ```?SpinProduct`*```:
+
+
+<img src="./demo/initialization.png" alt="Alt Text" width="732" height="465">
+
+
+(2) Then we construct a two spin sites with both $S=1/2$.
+
 
 
 ## Updates
