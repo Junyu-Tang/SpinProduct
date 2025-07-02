@@ -31,10 +31,19 @@ After the package is sucessfully loaded, type ```?SpinProduct`* ``` to see all v
 
 ## Examples
 
-
+%<img src="./Demo/FindGSres2.png" alt="Alt Text" width="400" height="250">
 
 ## Functions
 
+ * ``` TotalSpin[listS_]```
+
+ Add seversal quantum spin number $S$ (total spin number). The input ```listS``` is a list (vector) contains only positive integer or half integer $(S_i=1/2,1,3/2,2,5/2,...)$. For three spin sites with spin-1/2 for all of the sites, one can use the input ```listS={1/2,1/2,1/2}```. Tips: Use 3/2 instead of 1.5 for the quantum spin number $S$. The length of input list is recorded to a variable ```Sites```, which can be directly called.
+ <br/><br/>
+
+ * ``` SU2Rep[N_]```
+
+This function returns an association for the ```N```-dimensional irreducible representation (matrices) of three generators of SU(2) group. ```N``` must be an positive integer that is larger or equal to 2.
+<br/><br/>
 
 
 ## Updates
