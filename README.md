@@ -73,7 +73,13 @@ In the following, I demonsate how my package can be applied to the spin singlet 
 
 <img src="./demo/states.png" alt="Alt Text" width="546" height="702">
 
-(3) Next, we define some operators and obtain the results after applying them to the states. Here, we have defined the spin ladder operators at site 1 and total spin operator inclusing both sites. We have calcuatted the expectation values of the total spin operator and verified that the total spin for singlet state is S=0. As for triplet state, it's $S=1$ such that $S^2=\sqrt{(S(S+1))} = 2$.
+(3) Next, we define some operators and obtain the results after applying them to the states. Here, we have defined the spin ladder operators at site 1 and total spin operator inclusing both sites. We have calcuatted the expectation values of the total spin operator and verified that the total spin for singlet state is S=0. As for triplet state, it's $S=1$ such that $S^2=(S(S+1)) = 2$.
+
+<img src="./demo/operator.png" alt="Alt Text" width="558" height="416">
+
+(4) At the end, we have also verified the spin square operator at site 1. Note that the triplet state with $S_z=0$ is an entangled state, which cannot be written in the form of direct product state. So, if ones tries to convert it to product state by calling ```ToProduct[triplet2]```, then, the function will throw an error, calling for a valid input.
+
+<img src="./demo/last.png" alt="Alt Text" width="462" height="187">
 
 ## Updates
 
