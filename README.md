@@ -28,3 +28,17 @@ The above command should be equivalent with
 <<"SpinProduct`"
 ```
 After the package is sucessfully loaded, type ```?SpinProduct`* ``` to see all variables and available functions.
+
+## Examples
+
+
+
+## Functions
+
+
+
+## Updates
+
+* Version-1.0 2025/07/02
+  
+  First version of AFMVisual!
