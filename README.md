@@ -29,9 +29,6 @@ The above command should be equivalent with
 ```
 After the package is sucessfully loaded, type ```?SpinProduct`* ``` to see all variables and available functions.
 
-## Examples
-
-<img src="./Demo/FindGSres2.png" alt="Alt Text" width="400" height="250">
 
 ## Functions
 
@@ -47,8 +44,12 @@ This function returns an association of the ```N```-dimensional irreducible repr
 
  * ``` SpinOp[i_, op_]```
 
-This function returns a representation (matrix) of operator ```op``` at spin site ```i```. The valid input of operator ```op``` includes ```op="Sx", "Sy", "Sz", "Sp", "Sm", "S2"```.
+This function returns a representation (matrix) of operator ```op``` at spin site ```i```. The valid input of operator ```op``` includes ```op="Sx", "Sy", "Sz", "Sp", "Sm", "S2"```, where "Sp" and "Sm" are the ladder operators defined as $S^+=S_x+iS_y$ and $S^-=S_x-iS_y$ respectively.
  <br/><br/>
+
+## Examples
+
+<img src="./Demo/FindGSres2.png" alt="Alt Text" width="400" height="250">
 
 
 ## Updates
