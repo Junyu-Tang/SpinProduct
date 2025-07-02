@@ -69,9 +69,11 @@ In the following, I demonsate how my package can be applied to the spin singlet 
 <img src="./demo/initialization.png" alt="Alt Text" width="732" height="465">
 
 
-(2) Then we construct a two spin sites with both $S=1/2$.
+(2) Then we construct a two spin sites with both $S=1/2$ by calling ```TotalSpin``` function. The four spin product states can be constructed by calling ```ProductState``` function. The singlet and triplet states can be constructed from the four spin product states. To transform the column vector to the explicitly direct product state written in Dirac ket notation, we use ```ToProduct``` function.
 
+<img src="./demo/states.png" alt="Alt Text" width="546" height="702">
 
+(3) Next, we define some operators and obtain the results after applying them to the states. Here, we have defined the spin ladder operators at site 1 and total spin operator inclusing both sites. We have calcuatted the expectation values of the total spin operator and verified that the total spin for singlet state is S=0. As for triplet state, it's $S=1$ such that $S^2=\sqrt{(S(S+1))} = 2$.
 
 ## Updates
 
