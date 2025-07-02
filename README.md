@@ -44,7 +44,18 @@ This function returns an association of the ```N```-dimensional irreducible repr
 
  * ``` SpinOp[i_, op_]```
 
-This function returns a representation (matrix) of operator ```op``` at spin site ```i```. The valid input of operator ```op``` includes ```op="Sx", "Sy", "Sz", "Sp", "Sm", "S2"```, where "Sp" and "Sm" are the ladder operators defined as $S^+=S_x+iS_y$ and $S^-=S_x-iS_y$ respectively.
+This function returns a representation (matrix) of operator ```op``` at spin site ```i```. The output is constructed by direct product of identity matrices and the irreducible representation of the SU(2) group for spin at site $i$. The dimension of returned matrix is dim=N1xN2xN3... with Ni=2S(i)+1 the dimension of spin space for spin at site $i$. The valid input of operator ```op``` includes ```op="Sx", "Sy", "Sz", "Sp", "Sm", "S2"```, where "Sp" and "Sm" are the ladder operators defined as $S^+=S_x+iS_y$ and $S^-=S_x-iS_y$ respectively. The operator "S2" is defined as the square of total spin $S^2=S_x^2+S_y^2+S_z^2$. Before calling this function, one must first specify the quantum spin number $S$ at each spin site by calling ``` TotalSpin```.
+ <br/><br/>
+
+ * ``` ProductState[ListSz_]```
+
+This function returns a representation (matrix) of the direct product state with specified $S_z$ at each spin site. The output is constructed by direct product of spin states at each site. Thus, the returned matrix is dim=N1xN2xN3... with Ni=2S(i)+1 the dimension of spin space for spin at site $i$. In our convention, the state is in the $S_z$ basis. For example, a state in $|S=1,S_z=-1\rangle$ is represented by a column vector $(0,0,1)^T$ while the state $|S=1,S_z=+1\rangle$ is represented by $(1,0,0)^T$. The input ```ListSz``` contains the quantum number $S_z$ at each site and must be a list with the same length as spin sites. In additional, the input must satisfies the constrain $-S(i)<= S_z(i) <= +S(i)$ at each spin site. Before calling this function, one must first specify the quantum spin number $S$ at each spin site by calling ``` TotalSpin```.
+ <br/><br/>
+
+ * ``` ToProduct[state_]```
+
+This function translate the input column vector ```state``` of some state to the product states explicitly written in Dirac ket notation. The input must be in the column form ```state={{v1},{v2},{v3},...}```. Note that if the input can not be written as the product states (for example, the entangle state for triplet with $S_z=0$), then this function will throw an error.
+
  <br/><br/>
 
 ## Examples
