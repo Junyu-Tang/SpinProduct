@@ -41,4 +41,4 @@ After the package is sucessfully loaded, type ```?SpinProduct`* ``` to see all v
 
 * Version-1.0 2025/07/02
   
-  First version of AFMVisual!
+  First version of SpinProduct!
