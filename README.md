@@ -62,7 +62,7 @@ This function translate the input column vector ```state``` of some state to the
 
 In the following, I demonsate how my package can be applied to the spin singlet and triplet states, which are the most famous states for two spin sites. Note that, the package can also deal with the case of single spin. The mathematica notebook for the below examples can be found in the Demo folder.
 
-<img src="./Demo/FindGSres2.png" alt="Alt Text" width="400" height="250">
+<img src="./Demo/initialization.png" alt="Alt Text" width="400" height="250">
 
 
 ## Updates
