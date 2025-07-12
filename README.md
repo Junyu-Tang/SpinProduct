@@ -34,7 +34,7 @@ After the package is sucessfully loaded, type ```?SpinProduct`* ``` to see all v
 
  * ``` TotalSpin[listS_]```
 
- Add seversal quantum spin number $S$ (total spin number). The input ```listS``` is a list (vector) contains only positive integer or half integer (S = 1/2, 1, 3/2, 2, 5/2,...$). For three spin sites with spin-1/2 for all of the sites, one can use the input ```listS={1/2,1/2,1/2}```. Tips: Use 3/2 instead of 1.5 for the quantum spin number $S$. The length of input list is recorded to a variable ```Sites```, which can be directly called.
+ Add seversal quantum spin number $S$ (total spin number). The input ```listS``` is a list (vector) contains only positive integer or half integer (S = 1/2, 1, 3/2, 2, 5/2,...). For three spin sites with spin-1/2 for all of the sites, one can use the input ```listS={1/2,1/2,1/2}```. Tips: Use 3/2 instead of 1.5 for the quantum spin number $S$. The length of input list is recorded to a variable ```Sites```, which can be directly called.
  <br/><br/>
 
  * ``` SU2Rep[N_]```
